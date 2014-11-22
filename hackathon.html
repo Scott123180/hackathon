@@ -18,12 +18,19 @@
 </div>
 <!--
 <script>
-var buildingArray = [];
-buildingArray[0] = document.getElementById('myFile').innerHTML;
+
+var buildingArray = new Array();
+
+buildingArray[0] = new Image();  
+buildingArray[0].src = "Capture.png";
+buildingArray[0].imageCaption = "A caption for the image"; 
+  
+
+
 function getInfo() {
-document.write(buildingArray[0]);
+  document.write(buildingArray[0]);
 }
--->
+
 
 </script>
 </body>
