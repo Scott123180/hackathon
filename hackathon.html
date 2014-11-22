@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -9,24 +9,21 @@
 <h1>Marist College Self-Guided Tour</h1>
 <body>
 </form>
-<input type="file" name="myFile" id="myFile">
-<input type="button" value="Get Info" onclick="getInfo()">
+    <form action="https://api.idolondemand.com/1/api/sync/recognizeimages/v1" method ="post" enctype="multipart/form-data">
+    <input type="file" name="myFile" id="myFile" />
+    <input type="hidden" name="apikey" value="27f7d998-e81b-464a-904f-b565c3a33f41" />
+    <input type="submit"/>
+<!--    <input type="button" value="Get Info" onclick="getInfo()"> -->
 </form>
 </div>
+<!--
 <script>
-
-var buildingArray = new Array();
-
-buildingArray[0] = new Image();  
-buildingArray[0].src = "Capture.png";
-buildingArray[0].imageCaption = "A caption for the image"; 
-  
-
-
+var buildingArray = [];
+buildingArray[0] = document.getElementById('myFile').innerHTML;
 function getInfo() {
-  document.write(buildingArray[0]);
+document.write(buildingArray[0]);
 }
-
+-->
 
 </script>
 </body>
