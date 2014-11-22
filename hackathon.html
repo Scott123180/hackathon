@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
@@ -8,15 +8,17 @@
 <center>
 <h1>Marist College Self-Guided Tour</h1>
 <body>
-<form>
+</form>
 <input type="file" name="myFile" id="myFile">
 <input type="button" value="Get Info" onclick="getInfo()">
 </form>
+</div>
 <script>
-var buildingArray = [];
-var myFile = document.getElementById('myFile').innerHTML
 
-function getInfo(myFile) {
+var buildingArray = [];
+buildingArray[0] = document.getElementById('myFile').innerHTML;
+function getInfo() {
+document.write(buildingArray[0]);
 }
 
 
