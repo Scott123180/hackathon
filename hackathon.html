@@ -10,10 +10,13 @@
 <body>
 </form>
     <form action="https://api.idolondemand.com/1/api/sync/recognizeimages/v1" method ="post" enctype="multipart/form-data">
-    <input type="file" name="myFile" id="myFile">
-    <input type="hidden" name="apikey" value="27f7d998-e81b-464a-904f-b565c3a33f41"><input type="button" value="Get Info" onclick="getInfo()">
+    <input type="file" name="myFile" id="myFile" />
+    <input type="hidden" name="apikey" value="27f7d998-e81b-464a-904f-b565c3a33f41" />
+    <input type="submit"/>
+<!--    <input type="button" value="Get Info" onclick="getInfo()"> -->
 </form>
 </div>
+<!--
 <script>
 
 var buildingArray = [];
@@ -21,7 +24,7 @@ buildingArray[0] = document.getElementById('myFile').innerHTML;
 function getInfo() {
 document.write(buildingArray[0]);
 }
-
+-->
 
 </script>
 </body>
