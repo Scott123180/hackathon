@@ -85,6 +85,22 @@ function testArray() {
   counter = ( counter + 1 );
 }
 
+var URL = myFile
+var apiURL;
+var setURL = function(URL)
+{
+  var path = encodeURIComponent(URL);
+  apiURL = "https://api.idolondemand.com/1/api/sync/recognizeimages/v1" + path + "&apikey=6f74b530-b4f0-4552-acdc-ec7f3e096962";
+}
+var sendRequest = function(){
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", apiURL, false);
+  xhr.send();
+  var xhrDoc = xhr.response;
+  console.log(xhrDoc);
+}
+setURL(URL);
+sendRequest();
 
 </script>
 </body>
