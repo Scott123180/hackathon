@@ -3,7 +3,6 @@
 
 body {
 	background-color: hsla(0,81%,29%,0.65);
-	width: 50%;
 }
 
 .myButton {
@@ -32,4 +31,8 @@ body {
 h1 {
 	font:family Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	color: #fff;
+}
+
+p {
+	color: #fff;	
 }
