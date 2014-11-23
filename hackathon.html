@@ -1,19 +1,22 @@
-﻿
+﻿<!DOCTYPE html>
 <html>
 <head>
-<link href="hackathon.css" rel="stylesheet" />
-<script src="hackathon.js"></script>
-<title>What's this building?</title>
+	<link href="hackathon.css" rel="stylesheet" />
+	<script src="building-references.js"></script>
+	<script src="hackathon.js"></script>
+	<title>What's this building?</title>
 </head>
-<center>
-<h1>Marist College Self-Guided Tour</h1>
-<p>To start the tour, take a picture of a barcode in front of the building</p>
 <body>
-<div>
- <input id="url" type="text" />
- <button onclick="run()">Try it</button>
-</div>
-
+	<h1 align="center">Marist College Self-Guided Tour</h1>
+	<div>
+		<center id="area">
+			<p id="intro" >To start the tour, take a picture of a barcode in front of the building</p>
+			<input id="url" type="text" />
+			<button id="runner" onclick="run()">Enter</button>
+		</center>
+	</div>
+	<div id="profile">
+	
+	</div>
 </body>
-</center>
 </html>
