@@ -3,6 +3,7 @@
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="utf-8" />
+<link href="hackathon.css" rel="stylesheet" />
 <title>What's this building?</title>
 </head>
 <center>
@@ -12,9 +13,9 @@
     <form action="https://api.idolondemand.com/1/api/sync/recognizeimages/v1" method ="post" enctype="multipart/form-data">
     <input type="file" name="file" accept="image/*" />
     <input type="hidden" name="apikey" value="27f7d998-e81b-464a-904f-b565c3a33f41" />
-    <input type="submit"/>
-    <input type="button" value="Test Array" onclick="testArray()" />
-    <input type="button" value="Get Info" onclick="getInfo()" />
+    <input type="submit" class="myButton"/>
+    <input type="button" class="myButton" value="Test Array" onclick="testArray()" />
+    <input type="button" class="myButton" value="Get Info" onclick="getInfo()" />
 </form>
 </div>
 <script>
