@@ -36,4 +36,10 @@ body, html {
 h1 {
 	font:family Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	color: #fff;
+	text-align:center;
+}
+
+a: link {
+	color: hsla(183,100%,50%,1.00);
+	font-size: 13em;
 }
