@@ -35,11 +35,13 @@ body, html {
 
 h1 {
 	font:family Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
-	color: #fff;
-	text-align:center;
-	border: thick;
-	border: #FFFFFF;
+	color: #FFFFFF;
+	border-style: solid;
+	border-radius: 200px;
+	padding: 3px;
 	font-size: 45px;
+	width: 700px;
+	
 }
 
 a:link {
