@@ -1,11 +1,29 @@
 // JavaScript source code
 
-var apiKey = "27f7d998-e81b-464a-904f-b565c3a33f41"
+var apiKey = "31073e76-4d1f-4615-9375-694ebfad9db7";
 
-var xhr = new XMLHttpRequest();
-xhr.open("GET", "https://api.idolondemand.com/1/api/sync/recognizeimages/v1", false);
-xhr.send();
+var apiURL;
 
+var setURL = function(url){
 
-console.log(xhr.status);
-console.log(xhr.statusText);
+  var path = encodeURIComponent(url);
+   
+  apiURL = "https://api.idolondemand.com/1/api/sync/recognizebarcodes/v1?url=" + path + "&apikey=31073e76-4d1f-4615-9375-694ebfad9db7";
+}
+
+var sendRequest = function(){
+  var xhr = new XMLHttpRequest();
+  xhr.open("GET", apiURL, false);
+  xhr.send();
+  var xhrDoc = xhr.response;
+  console.log(xhrDoc);
+}
+
+var run = function()
+{
+	var inputBox = document.getElementById('url');
+	var inputStr = inputBox.value;
+	setURL(inputStr);
+	sendRequest();
+};
+
