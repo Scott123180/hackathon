@@ -76,6 +76,7 @@ var profile = function(buildingNum, name, description, link)
 	div.appendChild(center);	
 	
 	var inputBox = document.createElement('input');
+	inputBox.setAttribute("class", "myText");
 	inputBox.setAttribute("id", "url");
 	
 	var button = document.createElement('button');

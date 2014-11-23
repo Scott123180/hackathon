@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: hsla(0,81%,29%,0.65);
+	background-color: hsla(359,100%,33%,0.81);
 	width: 100%;
 }
 
@@ -37,9 +37,58 @@ h1 {
 	font:family Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
 	color: #fff;
 	text-align:center;
+	border: thick;
+	border: #FFFFFF;
 }
 
 a: link {
 	color: hsla(183,100%,50%,1.00);
 	font-size: 13em;
+}
+
+.myButton {
+	background-color:#c62d1f;
+	-moz-border-radius:28px;
+	-webkit-border-radius:28px;
+	border-radius:28px;
+	border:1px solid #d02718;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:17px;
+	padding:16px 31px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #810e05;
+}
+.myButton:hover {
+	background-color:#f24437;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
+.myText {
+	-moz-box-shadow:inset 0px 1px 0px 0px #000000;
+	-webkit-box-shadow:inset 0px 1px 0px 0px #000000;
+	box-shadow:inset 0px 1px 0px 0px #000000;
+	background-color:#7d7d7d;
+	-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	border-radius:3px;
+	border:1px solid #000000;
+	display:inline-block;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:arial;
+	font-size:13px;
+	padding:6px 24px;
+	text-decoration:none;
+	text-shadow:0px 1px 0px #000000;
+}
+
+.myText:active {
+	position:relative;
+	top:1px;
 }
