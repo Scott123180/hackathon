@@ -3,6 +3,7 @@
 
 body {
 	background-color: hsla(0,81%,29%,0.65);
+	width: 50%;
 }
 
 .myButton {
