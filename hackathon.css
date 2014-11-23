@@ -106,6 +106,12 @@ h2 {
 }
 
 #ft {
+	margin-top: 300px;
+	color: #eeccbb;
+	font-size: 12px;
+}
+
+ul {
 	color: #eeccbb;
 	font-size: 12px;
 }
