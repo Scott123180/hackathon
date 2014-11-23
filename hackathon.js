@@ -25,6 +25,8 @@ var run = function()
 	var inputBox = document.getElementById('url');
 	var intro = document.getElementById('intro');
 	var center = document.getElementById('area');
+	var div = document.getElementById('area2');
+	var body = document.getElementById('body');
 	
 	var inputStr = inputBox.value;
 	setURL(inputStr);
@@ -36,6 +38,9 @@ var run = function()
 	center.removeChild(intro);
 	center.removeChild(inputBox);
 	center.removeChild(button);
+	div.removeChild(center);
+	body.removeChild(div);
+	
 	
 };
 
@@ -43,6 +48,8 @@ var profile = function(buildingNum, name, description, link)
 {
 	var div = document.getElementById('profile')
 	var center = document.createElement('center');
+	
+	center.setAttribute("id", "area");
 	
 	var buildingName = document.createElement('h2');
 	buildingName.innerHTML = name[buildingNum];
@@ -67,6 +74,32 @@ var profile = function(buildingNum, name, description, link)
 	center.appendChild(buildingLink);
 	
 	div.appendChild(center);	
+	
+	var inputBox = document.createElement('input');
+	inputBox.setAttribute("id", "url");
+	
+	var button = document.createElement('button');
+	button.setAttribute("id", "runner");
+	button.setAttribute("onclick", "run()");
+	button.innerHTML = "Enter";
+	
+	var intro = document.createElement('p')
+	intro.setAttribute("id", "intro");
+	intro.innerHTML = "Upload Next Picture";
+	
+	var div = document.createElement('div');
+	div.setAttribute("id", "area2");
+	
+	var body = document.getElementById('body');
+	
+	center.appendChild(intro);
+	center.appendChild(inputBox);
+	center.appendChild(button);
+	
+	div.appendChild(center);
+	
+	body.appendChild(div);
+	
 }
 
 
