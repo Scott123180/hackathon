@@ -80,6 +80,7 @@ var profile = function(buildingNum, name, description, link)
 	
 	var button = document.createElement('button');
 	button.setAttribute("id", "runner");
+	button.setAttribute("class", "myButton");
 	button.setAttribute("onclick", "run()");
 	button.innerHTML = "Enter";
 	
