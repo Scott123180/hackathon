@@ -2,7 +2,7 @@
 /* CSS Document */
 
 body {
-	background-color: #194CD7
+	background-color: hsla(0,81%,29%,0.65);
 }
 
 .myButton {
@@ -10,7 +10,7 @@ body {
 	-moz-border-radius:28px;
 	-webkit-border-radius:28px;
 	border-radius:28px;
-	border:1px solid #18ab29;
+	border:1px solid #ABABAB;
 	display:inline-block;
 	cursor:pointer;
 	color:#000;
@@ -26,4 +26,9 @@ body {
 .myButton:active {
 	position:relative;
 	top:1px;
+}
+
+h1 {
+	font:family Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
+	color: #fff;
 }
